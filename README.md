@@ -14,8 +14,8 @@ implementation) covering scope, data model, and known limitations.
 
 ```
 ┌─────────────┐      REST/JSON      ┌──────────────────┐       ┌────────────┐
-│   React     │ ───────────────────▶│  FastAPI backend  │─────▶│ PostgreSQL │
-│  frontend   │◀─────────────────── │  + backtest engine│      │ (or SQLite)│
+│   React     │ ───────────────────▶│ FastAPI backend  │─────▶ │ PostgreSQL │
+│  frontend   │◀─────────────────── │ + backtest engine│       │ (or SQLite)│
 └─────────────┘                     └──────────────────┘       └────────────┘
                                               │
                                               ▼
