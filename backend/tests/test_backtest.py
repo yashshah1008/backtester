@@ -4,11 +4,11 @@ Unit tests for the backtest engine.
 These run against plain pandas Series — no DB, no API, no network —
 which is exactly why the engine was written as pure functions.
 """
-import numpy as np
+
 import pandas as pd
 import pytest
 
-from app.backtest import run_backtest, generate_signals, _max_drawdown, _sharpe_ratio, _win_rate
+from app.backtest import run_backtest, _max_drawdown, _sharpe_ratio, _win_rate
 
 
 def make_price_series(values, start="2020-01-01"):
