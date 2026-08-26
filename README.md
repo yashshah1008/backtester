@@ -1,5 +1,7 @@
 # Backtester
 
+🔗 **Live demo:** https://backtester-frontend-zib7.onrender.com
+
 A full-stack rule-based strategy backtesting engine. Define a moving-average
 crossover strategy on a stock ticker, run it against real historical price
 data, and compare it to a buy-and-hold baseline with risk-adjusted metrics
@@ -11,10 +13,10 @@ implementation) covering scope, data model, and known limitations.
 ## Architecture
 
 ```
-┌─────────────┐      REST/JSON      ┌──────────────────┐      ┌────────────┐
+┌─────────────┐      REST/JSON      ┌──────────────────┐       ┌────────────┐
 │   React     │ ───────────────────▶│  FastAPI backend  │─────▶│ PostgreSQL │
 │  frontend   │◀─────────────────── │  + backtest engine│      │ (or SQLite)│
-└─────────────┘                     └──────────────────┘      └────────────┘
+└─────────────┘                     └──────────────────┘       └────────────┘
                                               │
                                               ▼
                                        ┌─────────────┐
@@ -71,7 +73,8 @@ run history.
   site (`npm run build` → serve `dist/`). Set `VITE_API_BASE` to the
   deployed backend's `/api` URL.
 
-*(Live link: add once deployed.)*
+**Live app:** https://backtester-frontend-zib7.onrender.com
+**API docs:** https://backtester-by-yash.onrender.com/docs
 
 ## Project management
 Issues for each feature/milestone are tracked on the repo's GitHub Projects
